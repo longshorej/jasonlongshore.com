@@ -1,0 +1,253 @@
+/* =================================================================
+   Reset CSS
+   ================================================================= */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* =================================================================
+   Utils
+   ================================================================= */
+
+
+
+/* =================================================================
+   Layout
+   ================================================================= */
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  background-color: #000000;
+  color: #FFFFFF;
+  font-family: "Fira Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 18px;
+  line-height: 1.4;
+}
+
+hr {
+  color: #FFF;
+  border: 1px solid #FFF;
+  margin: 2rem 0rem;
+}
+
+a, a:visited, a:hover {
+  color: #35a2ff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+pre {
+  font-family: monospace;
+  font-size: 0.7rem;
+}
+
+strong {
+  font-weight: bold;
+}
+
+#page {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+
+#content {
+  flex-grow: 1;
+}
+
+#header, #content, #footer {
+    flex-shrink: 0;
+}
+
+.container {
+  min-width: 325px;
+  max-width: 610px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.col-half {
+  width: 50%;
+  float: left;
+}
+
+@media only screen and (max-width: 600px) {
+  .col-half {
+    width: 80%;
+    margin: 0 auto;
+    float: none;
+    margin-bottom: 2rem;
+    margin-top: -2rem;
+  }
+}
+
+#header {
+  background-color: #111111;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+
+#header-main-links li {
+  display: inline-block;
+  padding: 0em 1rem;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+@media only screen and (max-width: 600px) {
+  #header-main-links li {
+    padding: 0rem 0.25rem;
+  }
+
+  #header-main-links #main-section-link-root-container {
+    display: block;
+    margin-bottom: 1rem;
+  }
+}
+
+#header-main-links li a {
+  color: #FFFFFF;
+  padding-bottom: 0.5rem;
+}
+
+#header-main-links li a:hover {
+  border-bottom: 2px solid #1f65de !important;
+  text-decoration: none;
+}
+
+.page-section-root #main-section-link-root,
+.page-section-blog #main-section-link-blog,
+.page-section-projects #main-section-link-projects,
+.page-section-contact #main-section-link-contact {
+  border-bottom: 2px solid #1f65de;
+  color: #FFFFFF;
+}
+
+
+#footer {
+  font-size: 0.8rem;
+  padding: 2rem;
+  clear: both;
+  text-align: center;
+}
+
+
+
+/* =================================================================
+   Homepage
+   ================================================================= */
+
+
+/* =================================================================
+   Projects
+   ================================================================= */
+
+#projects .project {
+  margin-bottom: 2rem;
+}
+
+#projects .heading {
+  font-size: larger;
+}
+
+#projects .role {
+  font-size: smaller;
+  color: #AAA;
+}
+
+/* =================================================================
+   Contact
+   ================================================================= */
+
+#contact #pgp-container {
+  display: table;
+  margin: 0px auto;
+}
+
+#contact #social {
+  font-size: 1.0rem;
+  text-align: right;
+}
+
+/* =================================================================
+   Blog
+   ================================================================= */
+
+#blog h3, #blog .year {
+  text-align: center;
+  color: #de1f87;
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+#blog .when {
+  font-size: smaller;
+  color: #AAA;
+}
+
+#blog.blog-post h3 {
+  margin-bottom: 0;
+}
+
+#blog.blog-post .when {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+#blog .post {
+  margin-bottom: 1rem;
+}
