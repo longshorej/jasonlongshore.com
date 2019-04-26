@@ -15,7 +15,7 @@ jobs:
           command: |
             version=$(git describe --tags | sed -E 's/^v//')
 
-            csw src target/dist --ext .html --ext .css
+            csi src target/dist --ext .html --ext .css
 
             if [ "$WEBSITE_REPOSITORY" != "" ]; then
               git clone "$WEBSITE_REPOSITORY" website-repository
