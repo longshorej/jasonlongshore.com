@@ -23,6 +23,16 @@ To start a webserver at [http://localhost:8000](http://localhost:8000):
 python -m http.server --directory target/dist --bind localhost 8000
 ```
 
+## Release / Deploy
+
+Push a tag that starts with "v" and CircleCI will deploy it to the
+[www.jasonlongshore.com](https://github.com/longshorej/www.jasonlongshore.com)
+repository. GitHub pages will then deploy the site.
+
+By convention, use today's date and a monotonic counter for tag names,
+e.g. "2049-04-30.1"
+
+
 ## License
 
 This repository is provided under the [MIT License](LICENSE).
