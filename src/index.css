@@ -61,8 +61,9 @@ html, body {
 }
 
 body {
-  background-color: #000000;
-  color: #FFFFFF;
+  overflow-y: scroll;
+  background-color: #FFFFFF;
+  color: #3A3A3A;
   font-family: "Fira Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 18px;
   line-height: 1.4;
@@ -80,6 +81,7 @@ a, a:visited, a:hover {
 }
 
 a:hover {
+  color: #1f65de !important;
   text-decoration: underline;
 }
 
@@ -135,7 +137,6 @@ strong {
 }
 
 #header {
-  background-color: #111111;
   text-align: center;
   margin-bottom: 1rem;
 }
@@ -160,7 +161,6 @@ strong {
 }
 
 #header-main-links li a {
-  color: #FFFFFF;
   padding-bottom: 0.5rem;
 }
 
@@ -174,7 +174,7 @@ strong {
 .page-section-projects #main-section-link-projects,
 .page-section-contact #main-section-link-contact {
   border-bottom: 2px solid #1f65de;
-  color: #FFFFFF;
+  color: #1f65de;
 }
 
 
